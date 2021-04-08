@@ -1,5 +1,6 @@
 import datetime
 from templates import mainleft, mainright, textedit
+from random import randint
 def codeControl(code):
     try:
         code=int(code)
@@ -14,7 +15,7 @@ def coder(toDayCode):
     todaycodepassword = str((day + month + year) * int(toDayCode))
     return  todaycodepassword
 
-def encrypt(text,code):
+def encrypt(text,code=f"{randint(11111111111111111111,99999999999999999999999999999999999999999999)}"):
     if (codeControl(code)=="true"):
         textList = textedit.separate(text)
         outputleft = mainleft.encrypt(textList[0], code)
@@ -25,7 +26,7 @@ def encrypt(text,code):
         return "Please use numbers only "
 
 
-def defuse(text,code):
+def defuse(text,code=f"{randint(11111111111111111111,99999999999999999999999999999999999999999999)}"):
     if (codeControl(code)=="true"):
         textList = textedit.separate(text)
         outputleft = mainleft.defuse(textList[0], code)
@@ -36,7 +37,7 @@ def defuse(text,code):
         return "Please use numbers only "
 
 
-def dailyChangingEncrypt(text,codex):
+def dailyChangingEncrypt(text,codex=f"{randint(11111111111111111111,99999999999999999999999999999999999999999999)}"):
     if (codeControl(codex)=="true"):
         code=coder(codex)
         textList = textedit.separate(text)
@@ -46,7 +47,7 @@ def dailyChangingEncrypt(text,codex):
         return output
     else:
         return "Please use numbers only "
-def dailyChangingDefuse(text,codex):
+def dailyChangingDefuse(text,codex=f"{randint(11111111111111111111,99999999999999999999999999999999999999999999)}"):
     if (codeControl(codex)=="true"):
         code=coder(codex)
         textList = textedit.separate(text)
