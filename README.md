@@ -1,15 +1,17 @@
 # CTLE-module
 ## Hi welcome to CTLE-Module for python
+## First
+- `import encrypt`
 ### Standard use 
-* `encrypt(text,code):`
-* `defuse(text,code):`
+* `encrypt.encrypt(text,code):`
+* `encrypt.defuse(text,code):`
 ### Daily changing usage 
-* `dailyChangingEncrypt(text,code):`
-* `dailyChangingDefuse(text,code):`
+* `encrypt.dailyChangingEncrypt(text,code):`
+* `encrypt.dailyChangingDefuse(text,code):`
 ## Dont forget
 - The code should only consist of numbers.
 - Code must have a minimum of 20 digits.
 - Enter the code in string format.
 ## Sample usage 
-- `variable = encrypt("Hello my name is John. What is your name?","1231231318738123123"):`
+- `variable = encrypt.encrypt("Hello my name is John. What is your name?","1231231318738123123"):`
 - `print(variable)`
