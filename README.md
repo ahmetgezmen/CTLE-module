@@ -15,3 +15,6 @@
 ## Sample usage 
 - `variable = encrypt.encrypt("Hello my name is John. What is your name?","1231231318738123123"):`
 - `print(variable)`
+- OR
+- `variable = encrypt.encrypt("Hello my name is John. What is your name?"):`
+- `print(variable)`
