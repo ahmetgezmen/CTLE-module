@@ -21,7 +21,7 @@ def encrypt(text,code=f"{randint(11111111111111111111,99999999999999999999999999
         outputleft = mainleft.encrypt(textList[0], code)
         outputright = mainright.encrypt(textList[1], code)
         output = outputleft + outputright
-        return output
+        return f"code:{code} text:{output}"
     else:
         return "Please use numbers only "
 
@@ -32,7 +32,7 @@ def defuse(text,code=f"{randint(11111111111111111111,999999999999999999999999999
         outputleft = mainleft.defuse(textList[0], code)
         outputright = mainright.defuse(textList[1], code)
         output = outputleft + outputright
-        return output
+        return f"code:{code} text:{output}"
     else:
         return "Please use numbers only "
 
@@ -44,7 +44,7 @@ def dailyChangingEncrypt(text,codex=f"{randint(11111111111111111111,999999999999
         outputleft = mainleft.encrypt(textList[0], code)
         outputright = mainright.encrypt(textList[1], code)
         output = outputleft + outputright
-        return output
+        return f"code:{codex} text:{output}"
     else:
         return "Please use numbers only "
 def dailyChangingDefuse(text,codex=f"{randint(11111111111111111111,99999999999999999999999999999999999999999999)}"):
@@ -54,7 +54,7 @@ def dailyChangingDefuse(text,codex=f"{randint(11111111111111111111,9999999999999
         outputleft = mainleft.defuse(textList[0], code)
         outputright = mainright.defuse(textList[1], code)
         output = outputleft + outputright
-        return output
+        return f"code:{codex} text:{output}"
     else:
         return "Please use numbers only "
 
