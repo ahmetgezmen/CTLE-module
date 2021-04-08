@@ -8,7 +8,7 @@
 ### Daily changing usage 
 * `encrypt.dailyChangingEncrypt(text,code):`
 * `encrypt.dailyChangingDefuse(text,code):`
-## Dont forget
+## Don't forget
 - The code should only consist of numbers.
 - Code must have a minimum of 20 digits.
 - Enter the code in string format.
